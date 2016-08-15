@@ -1,0 +1,6 @@
+Verify
+- Component creation picker
+- Process step creation
+- Step creation
+
+Remove "Browse" link on Component Details?

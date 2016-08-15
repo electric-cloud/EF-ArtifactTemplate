@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <key>EF-ArtifactTemplate</key>
+  <version>1.0</version>
+  <label>EF-ArtifactTemplate</label>
+  <description>Plugin template for artifact repositories</description>
+  <category>System</category>
+  <author>Electric Cloud</author>
+  <help>help.xml</help>
+  <authorUrl />
+  <commander-version min="5.0" />
+</plugin>

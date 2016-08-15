@@ -1,0 +1,6 @@
+<componentContainer>
+  <title>EF-ArtifactTemplate</title>
+  <h2>Artifact Template Example Help</h2>
+  <h3>Overview</h3>
+  <p>The plugin template can be use for adding support for currently-unsupported artifact repositories.  It provides a DSL template for adding retrieve and publish procedures.  It includes the necessary properties to make these procedures available in the UI for component and process step creation.
+</componentContainer>
