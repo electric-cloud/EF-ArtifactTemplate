@@ -18,19 +18,20 @@ def retrieveProcedure = 'RetrieveUniqueName'
 // TODO: create a property with this name, then use in demote.groovy to remove the server level property below:
 def publishProcedure = 'publish'
 
-property "/server/ec_customEditors/pickerStep/$pluginKey - $retrieveProcedure", value: """\
+//  NMB-24135 workaround, provide a description
+property "/server/ec_customEditors/pickerStep/$pluginKey - $retrieveProcedure", description: "", value: """\
 	<step>
-		<project>/plugins/$pluginKey/project</project>
-		<procedure>$retrieveProcedure</procedure>
-		<category>System</category>
+	   <project>/plugins/$pluginKey/project</project>
+	   <procedure>$retrieveProcedure</procedure>
+	   <category>System</category>
 	</step>
 """.stripIndent()
 
-property "/server/ec_customEditors/pickerStep/$pluginKey - $publishProcedure", value: """\
+property "/server/ec_customEditors/pickerStep/$pluginKey - $publishProcedure", description: "", value: """\
 	<step>
-		<project>/plugins/$pluginKey/project</project>
-		<procedure>$publishProcedure</procedure>
-		<category>System</category>
+	   <project>/plugins/$pluginKey/project</project>
+	   <procedure>$publishProcedure</procedure>
+	   <category>System</category>
 	</step>
 """.stripIndent()
 
@@ -66,7 +67,7 @@ project pluginName,{
 	
 	procedure publishProcedure, {
 		formalParameter 'artifactName'
-		// XML menu to define parameter dialog.  See http://docs.electric-cloud.com/eflow_doc/6_5/User/HTML/UserflowHTML.htm#help-tutorial_custparamlayout.htm?Highlight=ec_parameterForm for details
+		// XML menu to define parameter dialog.  See http://docs.electric-cloud.com/eflow_doc/6_5/User/HTML/UserflowHTML.htm#help-tutorial_custparamlayout.htm for details
 		property 'ec_parameterForm', value: '''\
 			<editor>
 				<formElement>

@@ -1,6 +1,12 @@
 Verify
-- Component creation picker
-- Process step creation
-- Step creation
+[x] Component creation picker
+[x] Process step creation
+[] Step creation
 
 Remove "Browse" link on Component Details?
+
+Get help on step creation error:
+
+flow says:
+
+class com.google.gwt.core.client.JavaScriptException: (TypeError) : Cannot read proeprty 'g' of null
